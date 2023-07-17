@@ -6,8 +6,12 @@ public class CameraController : MonoBehaviour
 {
    [SerializeField]private GameObject jogador;
    private Vector3 posicao;
+   public ColorBlindFilter filter;
+
 
    private void Start(){
+        filter = GetComponent<ColorBlindFilter>();
+        
         this.posicao=new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
    }
     void LateUpdate()
