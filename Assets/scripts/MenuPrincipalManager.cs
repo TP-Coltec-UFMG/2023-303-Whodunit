@@ -13,7 +13,10 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private TMP_Dropdown filtros;
     [SerializeField] private Toggle legenda;
 
-
+    public void Awake(){
+        PlayerPrefs.SetInt("legendas", 0);
+        PlayerPrefs.SetString("filtroDaltonismo", null);
+    }
     public void Jogar(){
         SceneManager.LoadScene(nomeLevelDoJogo); 
     }
@@ -21,6 +24,7 @@ public class MenuPrincipalManager : MonoBehaviour
     public void AbrirOpcoes(){
         painelMenuInicial.SetActive(false);
         painelOpcoes.SetActive(true);
+        
     }
 
     public void FecharOpcoes(){
@@ -43,11 +47,14 @@ public class MenuPrincipalManager : MonoBehaviour
 
     public void guardaFiltro(){
         ComponentStorage.filtro=filtros.options[filtros.value].text;
-        Debug.Log(ComponentStorage.filtro);
+        PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
+        Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
     }
 
     public void guardaLegenda(){
+        PlayerPrefs.SetInt("legendas", 1);
         ComponentStorage.legendas=legenda.isOn;
+        Debug.Log(PlayerPrefs.GetInt("legendas"));
     }
 
 }

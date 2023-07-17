@@ -7,7 +7,7 @@ public class Dialogue : MonoBehaviour
     public string[] speechTxt;
     public string actorName;
     public AudioSource falaPersonagem;
-    public bool legendas;
+    public int legendas;
     private DialogueControl dc;
     bool onRadious;
 
@@ -16,7 +16,8 @@ public class Dialogue : MonoBehaviour
 
     private void Start(){
         this.dc=FindObjectOfType<DialogueControl>();
-        this.legendas = ComponentStorage.legendas;
+        this.legendas = PlayerPrefs.GetInt("legendas");
+        this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
     }
 
     private void FixedUpdate(){
@@ -28,7 +29,7 @@ public class Dialogue : MonoBehaviour
             if(!falaPersonagem.isPlaying){
                 falaPersonagem.Play();
             }
-            if(legendas == true){
+            if(legendas == 1){
             dc.Speech(this.speechTxt, this.actorName);
             }
              

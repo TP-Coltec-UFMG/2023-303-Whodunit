@@ -23,5 +23,6 @@ public class ControladorSom : MonoBehaviour
 
     public void  volumeMusical (float value){
         fundoMusical.volume=value;
+        PlayerPrefs.SetFloat("volumeAudio", value);
     }
 }
