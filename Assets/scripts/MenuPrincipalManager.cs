@@ -46,14 +46,12 @@ public class MenuPrincipalManager : MonoBehaviour
     }
 
     public void guardaFiltro(){
-        ComponentStorage.filtro=filtros.options[filtros.value].text;
         PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
         Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
     }
 
     public void guardaLegenda(){
         PlayerPrefs.SetInt("legendas", 1);
-        ComponentStorage.legendas=legenda.isOn;
         Debug.Log(PlayerPrefs.GetInt("legendas"));
     }
 
