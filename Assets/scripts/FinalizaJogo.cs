@@ -35,7 +35,7 @@ public class FinalizaJogo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.realtimeSinceStartup>12){
+        if(Time.realtimeSinceStartup>60){
             if(!respostaJogo.activeInHierarchy){
                AtivaInterface();
             } 
