@@ -23,8 +23,7 @@ public class MenuPrincipalManager : MonoBehaviour
 
     public void AbrirOpcoes(){
         painelMenuInicial.SetActive(false);
-        painelOpcoes.SetActive(true);
-        
+        painelOpcoes.SetActive(true);   
     }
 
     public void FecharOpcoes(){

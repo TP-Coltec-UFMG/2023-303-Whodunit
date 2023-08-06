@@ -3567,6 +3567,7 @@ MonoBehaviour:
   somLigadoSprite: {fileID: 21300000, guid: 4865d3764d79f006c9ba88ef694f52e4, type: 3}
   somDesligadoSprite: {fileID: 21300000, guid: 0a20123c72c9c8fd18e15e46f87d5050, type: 3}
   muteImage: {fileID: 779743763}
+  interfaceMudaValor: {fileID: 0}
 --- !u!1 &1402859718
 GameObject:
   m_ObjectHideFlags: 0

@@ -34,6 +34,7 @@ public class Dialogue : MonoBehaviour
             }
              
         }
+        this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
     }
     
     public void Interact(){
