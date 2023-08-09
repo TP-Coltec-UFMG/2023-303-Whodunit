@@ -12,14 +12,17 @@ public class FinalizaJogo : MonoBehaviour
        [SerializeField] GameObject interfaceAcertou;
        [SerializeField] GameObject interfaceErrou;
        Button[] botoes;
+       private float tempoDeInicio;
     // Start is called before the first frame update
     void Start()
     {
+        tempoDeInicio=Time.realtimeSinceStartup;
         botoes = opcoes.GetComponentsInChildren<Button>();
         foreach(Button item in botoes)
         {
             item.onClick.AddListener(AnalisaResposta);
         }
+        Debug.Log(tempoDeInicio);
     }
 
     public void AnalisaResposta(){
@@ -35,7 +38,9 @@ public class FinalizaJogo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.realtimeSinceStartup>60){
+        if((Time.realtimeSinceStartup-tempoDeInicio)>30){
+        Debug.Log(tempoDeInicio);
+        Debug.Log(Time.realtimeSinceStartup);
             if(!respostaJogo.activeInHierarchy){
                AtivaInterface();
             } 
