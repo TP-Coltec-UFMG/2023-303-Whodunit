@@ -51,9 +51,16 @@ O menu também apresenta opções de configuração e acessibilidade que podem s
 
 ### Personagens
 - Detetive (Jogador): Explore, Analise, e prenda o culpado.
-<img src="/readme/detetive.png">
+<img src="/readme/Frente3.png">
+<img src="/readme/Direita.png">
+<img src="/readme/Costas.png">
+<img src="/readme/Esquerda.png">
 
 - NPCs: Busque e interaja com NPCs para obter informações sobre o mistério.
+<img src="/readme/Empresario.png">
+<img src="/readme/Empregada.png">
+<img src="/readme/Barman.png">
+
 
 ### Mecânicas
 - Tempo: O jogador tem um tempo limite para resolver o mistério, ou é gameover.
