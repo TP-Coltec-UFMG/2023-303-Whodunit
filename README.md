@@ -35,7 +35,7 @@ O menu também apresenta opções de configuração e acessibilidade que podem s
 - Legendas (Ativadas/Desativadas)
 - Dublagem para interações do jogo
 
-<img src="/gifs/ajustes.gif">
+<img src="/readme/ajustes.gif">
 
 ## Jogo
 
