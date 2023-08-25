@@ -35,7 +35,7 @@ O menu também apresenta opções de configuração e acessibilidade que podem s
 - Legendas (Ativadas/Desativadas)
 - Dublagem para interações do jogo
 
-<img src="/gifs/ajustes.gif">
+<img src="/readme/ajustes.gif">
 
 ## Jogo
 
@@ -51,9 +51,16 @@ O menu também apresenta opções de configuração e acessibilidade que podem s
 
 ### Personagens
 - Detetive (Jogador): Explore, Analise, e prenda o culpado.
-<img src="/readme/detetive.png">
+<img src="/readme/Frente3.png" style="width:25%">
+<img src="/readme/Direita.png" style="width:25%">
+<img src="/readme/Costas.png" style="width:25%">
+<img src="/readme/Esquerda.png" style="width:25%">
 
 - NPCs: Busque e interaja com NPCs para obter informações sobre o mistério.
+<img src="/readme/Empresario.png" style="width:25%">
+<img src="/readme/Empregada.png" style="width:25%">
+<img src="/readme/BarMan.png" style="width:25%">
+
 
 ### Mecânicas
 - Tempo: O jogador tem um tempo limite para resolver o mistério, ou é gameover.
