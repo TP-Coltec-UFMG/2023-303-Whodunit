@@ -22,7 +22,7 @@ public class FinalizaJogo : MonoBehaviour
         tempoDeInicio=Time.realtimeSinceStartup;
 
         PlayerPrefs.SetFloat("tempoDeMenu", tempoDeInicio);
-        Debug.Log(tempoDeInicio);
+        Debug.Log("nivel"+nivel);
 
         botoes = opcoes.GetComponentsInChildren<Button>();
 
@@ -31,8 +31,7 @@ public class FinalizaJogo : MonoBehaviour
             item.onClick.AddListener(AnalisaResposta);
         }
 
-        switch (nivel)
-        {
+        switch (nivel){
             case "Fácil":
                 this.tempoDeJogo=30;
                 break;
