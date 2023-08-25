@@ -17,36 +17,37 @@ public class FinalizaJogo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string nivel=PlayerPrefs.GetString("nivel");
-        if(PlayerPrefs.GetInt("jaEntrouNoMenu")==0){
+
+        string nivel=PlayerPrefs.GetString("nivelDoJogo");
         tempoDeInicio=Time.realtimeSinceStartup;
-        }
-        PlayerPrefs.SetInt("jaEntrouNoMenu",1);
-        Debug.Log("tempo menu"+tempoDeInicio);
+
+        PlayerPrefs.SetFloat("tempoDeMenu", tempoDeInicio);
+        Debug.Log(tempoDeInicio);
+
         botoes = opcoes.GetComponentsInChildren<Button>();
+
         foreach(Button item in botoes)
         {
             item.onClick.AddListener(AnalisaResposta);
         }
-        Debug.Log(nivel);
 
         switch (nivel)
         {
             case "Fácil":
-                this.tempoDeJogo=10;
-                break;
-            case "Médio":
-                this.tempoDeJogo=20;
-                break;
-            case "Difícil":
                 this.tempoDeJogo=30;
                 break;
+            case "Médio":
+                this.tempoDeJogo=40;
+                break;
+            case "Difícil":
+                this.tempoDeJogo=50;
+                break;
             default:
-                this.tempoDeJogo=10;
+                this.tempoDeJogo=30;
                 break;
         }
         Debug.Log(this.tempoDeJogo);
-        Debug.Log(tempoDeInicio);
+        
     }
 
     public void AnalisaResposta(){
@@ -63,7 +64,6 @@ public class FinalizaJogo : MonoBehaviour
     void Update()
     {
         if((Time.realtimeSinceStartup-tempoDeInicio)>this.tempoDeJogo){
-        Debug.Log(tempoDeInicio);
             if(!respostaJogo.activeInHierarchy){
                AtivaInterface();
             } 
