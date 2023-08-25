@@ -11,6 +11,7 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
     [SerializeField] private TMP_Dropdown filtros;
+       [SerializeField] private TMP_Dropdown niveis;
     [SerializeField] private Toggle legenda;
 
     public void Awake(){
@@ -53,5 +54,10 @@ public class MenuPrincipalManager : MonoBehaviour
         PlayerPrefs.SetInt("legendas", 1);
         Debug.Log(PlayerPrefs.GetInt("legendas"));
     }
-
+    
+    public void guardaNivel(){
+        PlayerPrefs.SetString("nivel", niveis.options[niveis.value].text);
+        Debug.Log(PlayerPrefs.GetString("nivel"));
+        Debug.Log(PlayerPrefs.GetString("nivel"));
+    }
 }
