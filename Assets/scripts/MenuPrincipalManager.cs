@@ -11,7 +11,7 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
     [SerializeField] private TMP_Dropdown filtros;
-       [SerializeField] private TMP_Dropdown niveis;
+    [SerializeField] private TMP_Dropdown niveis;
     [SerializeField] private Toggle legenda;
 
     public void Awake(){
@@ -19,10 +19,6 @@ public class MenuPrincipalManager : MonoBehaviour
         PlayerPrefs.SetString("filtroDaltonismo", null);
     }
     public void Update(){
-        if(Time.realtimeSinceStartup<4f){
-        Debug.Log("a");
-        PlayerPrefs.SetInt("jaEntrouNoMenu", 0);
-        }
     }
     public void Jogar(){
         SceneManager.LoadScene(nomeLevelDoJogo); 
@@ -52,8 +48,8 @@ public class MenuPrincipalManager : MonoBehaviour
     }
 
     public void guardaFiltro(){
-        PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
-        Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
+        PlayerPrefs.SetString("filtroDeDaltonismo", filtros.options[filtros.value].text);
+        Debug.Log(filtros.options[filtros.value].text);
     }
 
     public void guardaLegenda(){
@@ -62,9 +58,16 @@ public class MenuPrincipalManager : MonoBehaviour
     }
     
     public void guardaNivel(){
-        PlayerPrefs.SetString("nivel", niveis.options[niveis.value].text);
-        Debug.Log(PlayerPrefs.GetString("nivel"));
-        Debug.Log(PlayerPrefs.GetString("nivel"));
+        PlayerPrefs.SetString("nivelDoJogo", niveis.options[niveis.value].text);
+        Debug.Log(PlayerPrefs.GetString("nivelDoJogo"));
+    }
+
+    public void fechaOpcoesJogo(){
+        painelOpcoes.SetActive(false);
+    }
+
+    public void abreOpcoesJogo(){
+        painelOpcoes.SetActive(true);
     }
 
    

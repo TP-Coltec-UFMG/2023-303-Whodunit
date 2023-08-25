@@ -2,39 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class ColorblindFilters : MonoBehaviour{
 
 
 public string filtro;
 public CameraController cam;
+[SerializeField] private TMP_Dropdown filtros;
 
 
 // Start is called before the first frame update
 void Start(){
-    this.filtro = PlayerPrefs.GetString("filtroDaltonismo");
+    alteraFiltro();
+}
+public void alteraFiltro(){
+    this.filtro = PlayerPrefs.GetString("filtroDeDaltonismo");
     cam = Camera.main.GetComponent<CameraController>();
     switch (filtro)
     {
         case "PROTANOPIA":
-            Debug.Log("oi1");
             cam.filter.mode = ColorBlindMode.Protanopia;
             break;
         case "DEUTERANOPIA":
-            Debug.Log("oi2");
             cam.filter.mode = ColorBlindMode.Deuteranopia;
             break;
         case "TRITANOPIA":
-            Debug.Log("oi3");
             cam.filter.mode = ColorBlindMode.Tritanopia;
             break;
         default:
-            Debug.Log("oi4");
-
             cam.filter.mode = ColorBlindMode.Normal;
             break;
     }
+}
+public void alteraFiltroJogo(){
+    PlayerPrefs.SetString("filtroDeDaltonismo", filtros.options[filtros.value].text);
+    Debug.Log(filtros.options[filtros.value].text);
+    alteraFiltro();
 }
 }
 
