@@ -1348,7 +1348,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.293, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3868,8 +3868,8 @@ RectTransform:
   m_Father: {fileID: 685943311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.293, y: 0}
+  m_AnchorMax: {x: 0.293, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4339,9 +4339,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeLevelDoJogo: jogo
+  menu: Menu
   painelMenuInicial: {fileID: 21171843}
   painelOpcoes: {fileID: 1402859718}
   filtros: {fileID: 587354445}
+  niveis: {fileID: 0}
   legenda: {fileID: 853707343}
 --- !u!4 &1348450494
 Transform:
@@ -4390,7 +4392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1402859719
 RectTransform:
   m_ObjectHideFlags: 0

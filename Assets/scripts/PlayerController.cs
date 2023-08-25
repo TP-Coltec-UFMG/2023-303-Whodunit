@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D fisica;
     private Vector2 direcao;
     [SerializeField]private float velocidade = 100f;
+
 
     private void Start(){
         this.fisica=GetComponent<Rigidbody2D>();
@@ -19,4 +20,5 @@ public class PlayerController : MonoBehaviour
     {
         this.fisica.MovePosition(fisica.position + direcao * velocidade * Time.fixedDeltaTime);
     }
+    
 }

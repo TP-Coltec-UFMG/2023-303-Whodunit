@@ -18,6 +18,12 @@ public class MenuPrincipalManager : MonoBehaviour
         PlayerPrefs.SetInt("legendas", 0);
         PlayerPrefs.SetString("filtroDaltonismo", null);
     }
+    public void Update(){
+        if(Time.realtimeSinceStartup<4f){
+        Debug.Log("a");
+        PlayerPrefs.SetInt("jaEntrouNoMenu", 0);
+        }
+    }
     public void Jogar(){
         SceneManager.LoadScene(nomeLevelDoJogo); 
     }
@@ -60,4 +66,6 @@ public class MenuPrincipalManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("nivel"));
         Debug.Log(PlayerPrefs.GetString("nivel"));
     }
+
+   
 }
