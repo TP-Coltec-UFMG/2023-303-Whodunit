@@ -17,7 +17,8 @@ void Start(){
     alteraFiltro();
 }
 public void alteraFiltro(){
-    this.filtro = PlayerPrefs.GetString("filtroDeDaltonismo");
+    Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
+    this.filtro = PlayerPrefs.GetString("filtroDaltonismo");
     cam = Camera.main.GetComponent<CameraController>();
     switch (filtro)
     {
@@ -36,8 +37,8 @@ public void alteraFiltro(){
     }
 }
 public void alteraFiltroJogo(){
-    PlayerPrefs.SetString("filtroDeDaltonismo", filtros.options[filtros.value].text);
-    Debug.Log(filtros.options[filtros.value].text);
+    PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
+    Debug.Log("teste2"+filtros.options[filtros.value].text);
     alteraFiltro();
 }
 }

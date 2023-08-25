@@ -5159,7 +5159,7 @@ MonoBehaviour:
     m_Options:
     - m_Text: "F\xE1cil"
       m_Image: {fileID: 0}
-    - m_Text: "M\xE9dia"
+    - m_Text: "M\xE9dio"
       m_Image: {fileID: 0}
     - m_Text: "Dif\xEDcil"
       m_Image: {fileID: 0}

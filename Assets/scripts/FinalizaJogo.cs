@@ -17,6 +17,7 @@ public class FinalizaJogo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         string nivel=PlayerPrefs.GetString("nivelDoJogo");
         tempoDeInicio=Time.realtimeSinceStartup;
 
@@ -29,8 +30,6 @@ public class FinalizaJogo : MonoBehaviour
         {
             item.onClick.AddListener(AnalisaResposta);
         }
-
-        Debug.Log(nivel);
 
         switch (nivel)
         {
@@ -47,6 +46,7 @@ public class FinalizaJogo : MonoBehaviour
                 this.tempoDeJogo=30;
                 break;
         }
+        Debug.Log(this.tempoDeJogo);
         
     }
 

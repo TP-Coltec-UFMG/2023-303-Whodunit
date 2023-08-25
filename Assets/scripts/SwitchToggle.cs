@@ -12,6 +12,7 @@ public class SwitchToggle : MonoBehaviour {
     Vector2 handlePosition ;
 
     void Awake(){
+        Debug.Log(PlayerPrefs.GetInt("lengendas"));
         toggle=GetComponent <Toggle>();
         handlePosition= uiHandleRectTransform.anchoredPosition;
         backgroundImage = uiHandleRectTransform.parent.GetComponent<Image>();
@@ -20,8 +21,13 @@ public class SwitchToggle : MonoBehaviour {
         handleDefaultColor = handleImage.color;
 
         toggle.onValueChanged.AddListener(OnSwitch); 
-        if(toggle.isOn)
+        if(toggle.isOn){
             OnSwitch(true);
+
+        }else if(PlayerPrefs.GetInt("lengendas")==1){
+            Debug.Log("testee");
+            OnSwitch(true);
+        }
     }
     void OnSwitch(bool on){
         uiHandleRectTransform.anchoredPosition=on?handlePosition* -1 : handlePosition;

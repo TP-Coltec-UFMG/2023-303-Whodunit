@@ -16,7 +16,8 @@ public class MenuPrincipalManager : MonoBehaviour
 
     public void Awake(){
         PlayerPrefs.SetInt("legendas", 0);
-        PlayerPrefs.SetString("filtroDaltonismo", null);
+        PlayerPrefs.SetString("filtroDeDaltonismo", null);
+        Debug.Log("legenda"+PlayerPrefs.GetInt("legendas"));
     }
     public void Update(){
     }
@@ -33,6 +34,19 @@ public class MenuPrincipalManager : MonoBehaviour
         painelMenuInicial.SetActive(true);
         painelOpcoes.SetActive(false);
     }
+    public void guardaFiltro(){
+        PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
+        Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
+    }
+
+    public void guardaLegenda(){
+        if(PlayerPrefs.GetInt("legendas")==0){
+            PlayerPrefs.SetInt("legendas", 1);
+        }else if(PlayerPrefs.GetInt("legendas")==1){
+            PlayerPrefs.SetInt("legendas", 0);
+        }
+        Debug.Log("legenda"+PlayerPrefs.GetInt("legendas"));
+    }
 
     /*public void SairDoJogo(){
         Debug.Log("Sair do jogo");
@@ -45,16 +59,6 @@ public class MenuPrincipalManager : MonoBehaviour
         #else
             Application.Quit();
         #endif
-    }
-
-    public void guardaFiltro(){
-        PlayerPrefs.SetString("filtroDeDaltonismo", filtros.options[filtros.value].text);
-        Debug.Log(filtros.options[filtros.value].text);
-    }
-
-    public void guardaLegenda(){
-        PlayerPrefs.SetInt("legendas", 1);
-        Debug.Log(PlayerPrefs.GetInt("legendas"));
     }
     
     public void guardaNivel(){
