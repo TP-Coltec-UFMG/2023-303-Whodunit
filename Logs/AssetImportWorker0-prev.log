@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/julia/OneDrive/Documentos/GitHub/2023-303-detetive
+C:/Users/julia/OneDrive/Área de Trabalho/jogo/2023-303-detetive
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49784
-Successfully changed project path to: C:/Users/julia/OneDrive/Documentos/GitHub/2023-303-detetive
-C:/Users/julia/OneDrive/Documentos/GitHub/2023-303-detetive
+56569
+Successfully changed project path to: C:/Users/julia/OneDrive/Área de Trabalho/jogo/2023-303-detetive
+C:/Users/julia/OneDrive/Área de Trabalho/jogo/2023-303-detetive
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,15 +47,15 @@ C:/Users/julia/OneDrive/Documentos/GitHub/2023-303-detetive
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [110724] Host "[IP] 192.168.94.124 [Port] 0 [Flags] 2 [Guid] 3716989695 [EditorId] 3716989695 [Version] 1048832 [Id] WindowsEditor(7,julialuna) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [113576] Host "[IP] 192.168.94.124 [Port] 0 [Flags] 2 [Guid] 1304636365 [EditorId] 1304636365 [Version] 1048832 [Id] WindowsEditor(7,julialuna) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [110724] Host "[IP] 192.168.94.124 [Port] 0 [Flags] 2 [Guid] 3716989695 [EditorId] 3716989695 [Version] 1048832 [Id] WindowsEditor(7,julialuna) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [113576] Host "[IP] 192.168.94.124 [Port] 0 [Flags] 2 [Guid] 1304636365 [EditorId] 1304636365 [Version] 1048832 [Id] WindowsEditor(7,julialuna) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 470.54 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 135.88 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/julia/OneDrive/Documentos/GitHub/2023-303-detetive/Assets
+[Subsystems] Discovering subsystems at path C:/Users/julia/OneDrive/Área de Trabalho/jogo/2023-303-detetive/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -67,42 +67,575 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012080 seconds.
+Registered in 0.008379 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 204.55 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 110.48 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.538 seconds
+- Completed reload, in  0.814 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1539ms)
-		BeginReloadAssembly (197ms)
+	ReloadAssembly (814ms)
+		BeginReloadAssembly (142ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1130ms)
-			LoadAssemblies (192ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (284ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (502ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (656ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (312ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (205ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (304ms)
-				ProcessInitializeOnLoadMethodAttributes (132ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (141ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.027913 seconds.
+Registered in 0.009394 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 100.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.393 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1393ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1084ms)
+			LoadAssemblies (177ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (536ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (101ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (300ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3797 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (56.2 KB). Loaded Objects now: 4257.
+Memory consumption went from 146.6 MB to 146.5 MB.
+Total: 3.139500 ms (FindLiveObjects: 0.291300 ms CreateObjectMapping: 0.133100 ms MarkObjects: 2.632000 ms  DeleteObjects: 0.082000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1340834.123441 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_38.asset
+  artifactKey: Guid(fd43658d597ab274b88251ff81dff4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_38.asset using Guid(fd43658d597ab274b88251ff81dff4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013b4f2273247c8adea58df7905465a2') in 0.127839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_28.asset
+  artifactKey: Guid(d18edd85e10d27b4ba8d977236ee4fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_28.asset using Guid(d18edd85e10d27b4ba8d977236ee4fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac7f2521f9f5924e25e642c07acf4c2') in 0.026975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_30.asset
+  artifactKey: Guid(c3f01d190c6e1c44e97627ecc703e66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_30.asset using Guid(c3f01d190c6e1c44e97627ecc703e66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c6c6dd9844c78fde44fb55256e6b8b') in 0.035480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_39.asset
+  artifactKey: Guid(59c6f4da8361e324183d87008ebbc8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_39.asset using Guid(59c6f4da8361e324183d87008ebbc8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7006ef0342822c75d5455c4f4e3b3da') in 0.034005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_27.asset
+  artifactKey: Guid(5eb89f5e40e06f949ad5850d82fa3bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_27.asset using Guid(5eb89f5e40e06f949ad5850d82fa3bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb989f7c870068233edba482585b86b5') in 0.035831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_24.asset
+  artifactKey: Guid(cc8ea04685c7fb649b92c493aca5dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_24.asset using Guid(cc8ea04685c7fb649b92c493aca5dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c55d9d3b8db1c72c74985de43be5c0') in 0.030997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_25.asset
+  artifactKey: Guid(4df509c344591cd4fae50ec54fbc0d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_25.asset using Guid(4df509c344591cd4fae50ec54fbc0d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd69200a6e88187863ab07c63f5f4667') in 0.046268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_32.asset
+  artifactKey: Guid(cf3fb68da0e870643bafc57eaa95987c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_32.asset using Guid(cf3fb68da0e870643bafc57eaa95987c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7bbd0ca677f381f964a333ee5bbe12') in 0.020093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/images/Cenario/escritorio/escritório_34.asset
+  artifactKey: Guid(e7779cd539647ee43a63ea1e8407e796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritório_34.asset using Guid(e7779cd539647ee43a63ea1e8407e796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5186838eb4f4662ee6355fd4b22e20f3') in 0.020240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.109847 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo.prefab
+  artifactKey: Guid(0f935a044853171418d402ca8a59a0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo.prefab using Guid(0f935a044853171418d402ca8a59a0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea68823ffdcd7a51bcbba5f1ede8e18') in 0.094954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.307733 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo.prefab
+  artifactKey: Guid(0f935a044853171418d402ca8a59a0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo.prefab using Guid(0f935a044853171418d402ca8a59a0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49dd5aa921ab0402801e30cf1f74e53') in 0.047925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_6.asset
+  artifactKey: Guid(2daa7b3012e0eae48b1b6512c956a4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_6.asset using Guid(2daa7b3012e0eae48b1b6512c956a4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674c15c549077aa744d034a979dfc85c') in 0.025048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_9.asset
+  artifactKey: Guid(23d4c2d443b260b439b77e4fca85b5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_9.asset using Guid(23d4c2d443b260b439b77e4fca85b5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff87b29550ff26c78af186164714278') in 0.020597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_20.asset
+  artifactKey: Guid(ef270a130753b054abb289643df26936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_20.asset using Guid(ef270a130753b054abb289643df26936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6918e16a2d24ea3aa79426803980a3') in 0.026716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_4.asset
+  artifactKey: Guid(a1c924c37612b634d9a26bf7ee0d4fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_4.asset using Guid(a1c924c37612b634d9a26bf7ee0d4fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28af0d3579aeda058babf16c15f6d905') in 0.023596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_2.asset
+  artifactKey: Guid(27e115b6f3b861848a84d8e5ac888ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_2.asset using Guid(27e115b6f3b861848a84d8e5ac888ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6e25cb23ed62ffd77ea337261ec69b') in 0.023117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_14.asset
+  artifactKey: Guid(e150e6741d861ac47aaee30bdef882f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_14.asset using Guid(e150e6741d861ac47aaee30bdef882f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4dcb07d30795d0a1e92c751d6125dd2') in 0.023235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_1.asset
+  artifactKey: Guid(ae3eb201590470d41a6b277517b4c561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_1.asset using Guid(ae3eb201590470d41a6b277517b4c561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccb5f1bae9740efa9fbbe919635cbef9') in 0.038044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_10.asset
+  artifactKey: Guid(dc275d8dc73e6bc4f86106ed99e4c3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_10.asset using Guid(dc275d8dc73e6bc4f86106ed99e4c3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd06f8443607ec00f90da11cb6767384') in 0.028517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_7.asset
+  artifactKey: Guid(dedfc9a9d0468c34a869c575d3716aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_7.asset using Guid(dedfc9a9d0468c34a869c575d3716aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc3148a2cf387fe4d52271ffe1488fe') in 0.038454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_3.asset
+  artifactKey: Guid(158e56ea20a21944ba270760a2c3eb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_3.asset using Guid(158e56ea20a21944ba270760a2c3eb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bc6b9531f06bca02c319ff997f5f49') in 0.035212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/images/Cenario/escritorio/escritorio_novo 1_21.asset
+  artifactKey: Guid(656c1d595d87aa846b4f17d18e3bf3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/escritorio/escritorio_novo 1_21.asset using Guid(656c1d595d87aa846b4f17d18e3bf3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6185ab1a21d60f63cd0891dcf2a5319') in 0.022974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1184.463047 seconds.
+  path: Assets/images/Cenario/bar/parede_porta.png
+  artifactKey: Guid(c270aceec8cd66d408cdd57756aed18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta.png using Guid(c270aceec8cd66d408cdd57756aed18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014f883457aef4efca6d6a136596056c') in 0.212041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.427712 seconds.
+  path: Assets/images/Cenario/bar/parede_porta.png
+  artifactKey: Guid(c270aceec8cd66d408cdd57756aed18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta.png using Guid(c270aceec8cd66d408cdd57756aed18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d08f7ca998a74c18f1ab1921d63385') in 0.022087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.708441 seconds.
+  path: Assets/images/Cenario/bar/parede_porta.png
+  artifactKey: Guid(c270aceec8cd66d408cdd57756aed18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta.png using Guid(c270aceec8cd66d408cdd57756aed18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c18e1ffa2b78aa0c19783357b8833d') in 0.137053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.671821 seconds.
+  path: Assets/images/Cenario/bar/parede_porta.prefab
+  artifactKey: Guid(2c2c472f5aee243499de355290a82428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta.prefab using Guid(2c2c472f5aee243499de355290a82428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07783958eb04b5addf42031cadeb7a2a') in 0.032860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.193317 seconds.
+  path: Assets/images/Cenario/bar/parede_porta.prefab
+  artifactKey: Guid(2c2c472f5aee243499de355290a82428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta.prefab using Guid(2c2c472f5aee243499de355290a82428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f90a8bf193f07f5e23818ec043f0c43') in 0.062351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_2.asset
+  artifactKey: Guid(977abaf633229544cacca0b53e59ce27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_2.asset using Guid(977abaf633229544cacca0b53e59ce27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2140f8c38ab7193b0101be65a6eeec') in 0.021169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_35.asset
+  artifactKey: Guid(c57c7a305d2d6d64789baa714b065fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_35.asset using Guid(c57c7a305d2d6d64789baa714b065fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6477dc443ed04e9fbe86069c5890e552') in 0.019805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_19.asset
+  artifactKey: Guid(19b7805bc9d662f408351f4ba942b2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_19.asset using Guid(19b7805bc9d662f408351f4ba942b2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10773adec58f94dbe42aed73d19beeeb') in 0.016197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_34.asset
+  artifactKey: Guid(03b96e2a81d614043af527dcb69c1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_34.asset using Guid(03b96e2a81d614043af527dcb69c1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efceba21b71362da1d60a326dbef6d74') in 0.020712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_3.asset
+  artifactKey: Guid(76ebb35ef67a010488a7d29d87e5c3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_3.asset using Guid(76ebb35ef67a010488a7d29d87e5c3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e62c46978d3280dc386c4960432ef5') in 0.022096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_10.asset
+  artifactKey: Guid(72ef68d24b344c14a814e4e440a210d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_10.asset using Guid(72ef68d24b344c14a814e4e440a210d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3fdb3465895acd904d4fb715607975') in 0.024341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_14.asset
+  artifactKey: Guid(10cb52826986d144d982c24f8893abec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_14.asset using Guid(10cb52826986d144d982c24f8893abec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3afe23a95875412ee80b5f171ea8d34') in 0.024540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_20.asset
+  artifactKey: Guid(09b81c362de57ec419fc8339aa64b5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_20.asset using Guid(09b81c362de57ec419fc8339aa64b5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f07b59b5076e75e3be24ef85555fe78') in 0.023083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_25.asset
+  artifactKey: Guid(c2fdb6a8cedb25946916667efd321096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_25.asset using Guid(c2fdb6a8cedb25946916667efd321096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128c6c1fc622e6c7b3a9781e0c43ce19') in 0.027753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_17.asset
+  artifactKey: Guid(ed57af2eb9ba99e499cb4009c56a8d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_17.asset using Guid(ed57af2eb9ba99e499cb4009c56a8d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0938c8d8ec17af7659c6ceab0cfc7cc') in 0.032893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_31.asset
+  artifactKey: Guid(3eea2a191aca1b54e85605d6bb559505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_31.asset using Guid(3eea2a191aca1b54e85605d6bb559505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4383019566b3596687098292307731') in 0.027813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_6.asset
+  artifactKey: Guid(82b91b813762cbd40910ef8be548f788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_6.asset using Guid(82b91b813762cbd40910ef8be548f788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd615fabb29d83b75e34c428ae99193c') in 0.023167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_33.asset
+  artifactKey: Guid(3640d4b513208044585e23859a55ec76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_33.asset using Guid(3640d4b513208044585e23859a55ec76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8184e687594ab91eb54fea5112be66') in 0.025611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_11.asset
+  artifactKey: Guid(4c0cda5c20b300e49bd4d1b830e750be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_11.asset using Guid(4c0cda5c20b300e49bd4d1b830e750be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063626df84ecb3244a8deba7f37fb424') in 0.023147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_13.asset
+  artifactKey: Guid(bd3f5e78f1b77054799d0232d46d612b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_13.asset using Guid(bd3f5e78f1b77054799d0232d46d612b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ad67abb389a5784419614512f1ef40') in 0.025431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_24.asset
+  artifactKey: Guid(73733ab66abd7e24782c52384d0e9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_24.asset using Guid(73733ab66abd7e24782c52384d0e9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4b921e2be5cfb97443495674cd207d') in 0.024126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_30.asset
+  artifactKey: Guid(ac5ff952e2b66bf4c99aeaaba9320386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_30.asset using Guid(ac5ff952e2b66bf4c99aeaaba9320386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3b122ccb96bd630b8f75dacad92a89') in 0.020016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_32.asset
+  artifactKey: Guid(4c0aa188fdd230a49b91aa0518dd033a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_32.asset using Guid(4c0aa188fdd230a49b91aa0518dd033a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3782ba3682a21f71c0ef92c2e6bb06a7') in 0.024391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_18.asset
+  artifactKey: Guid(8666da49ea2eb804c8ce30f26bef4b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_18.asset using Guid(8666da49ea2eb804c8ce30f26bef4b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b8621cdb5284f16fdffc81471cf9a69') in 0.020591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_7.asset
+  artifactKey: Guid(5e9a1c8d31c89d146a378a0854628f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_7.asset using Guid(5e9a1c8d31c89d146a378a0854628f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '027920f48547b56f83ed2519ebc80d00') in 0.024173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/images/Cenario/bar/parede_porta_4.asset
+  artifactKey: Guid(82fdc116bba66fe49a235b76597766d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/bar/parede_porta_4.asset using Guid(82fdc116bba66fe49a235b76597766d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a80009f9b4d6b92b3025dfc91a1562') in 0.022953 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008674 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.648 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2650ms)
+		BeginReloadAssembly (906ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (92ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (511ms)
+		EndReloadAssembly (1558ms)
+			LoadAssemblies (298ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (519ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (92ms)
+			SetupLoadedEditorAssemblies (645ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (425ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.49 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3772 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (24.7 KB). Loaded Objects now: 4274.
+Memory consumption went from 148.4 MB to 148.4 MB.
+Total: 11.084300 ms (FindLiveObjects: 1.154700 ms CreateObjectMapping: 0.634500 ms MarkObjects: 9.136000 ms  DeleteObjects: 0.156100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 431.330809 seconds.
+  path: Assets/images/Cenario/banheiro
+  artifactKey: Guid(d262fbc5a37c22c4b9149e9dabc265e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/banheiro using Guid(d262fbc5a37c22c4b9149e9dabc265e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d6981cd1499f055fa7e090e795209d') in 0.265171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.256843 seconds.
+  path: Assets/images/Cenario/banheiro/banheiro.png
+  artifactKey: Guid(b271d90291d166f4fb0435fd3094b375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/banheiro/banheiro.png using Guid(b271d90291d166f4fb0435fd3094b375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58d729143e49e57790fff014ca38f0f') in 0.215996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.648219 seconds.
+  path: Assets/images/Cenario/banheiro/banheiro.png
+  artifactKey: Guid(b271d90291d166f4fb0435fd3094b375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Cenario/banheiro/banheiro.png using Guid(b271d90291d166f4fb0435fd3094b375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a2e79fd9de983230e9ecff889018c5') in 0.019521 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025012 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.362 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3370ms)
+		BeginReloadAssembly (1325ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (155ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (832ms)
+		EndReloadAssembly (1831ms)
+			LoadAssemblies (238ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (596ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (830ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (273ms)
+				ProcessInitializeOnLoadAttributes (420ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3772 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (24.7 KB). Loaded Objects now: 4280.
+Memory consumption went from 148.5 MB to 148.4 MB.
+Total: 9.997100 ms (FindLiveObjects: 0.817300 ms CreateObjectMapping: 0.567200 ms MarkObjects: 7.909400 ms  DeleteObjects: 0.700200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009840 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\julia\OneDrive\Área de Trabalho\jogo\2023-303-detetive\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.856 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1857ms)
+		BeginReloadAssembly (308ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (109ms)
+		EndReloadAssembly (1365ms)
+			LoadAssemblies (194ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (603ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (379ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3772 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (24.6 KB). Loaded Objects now: 4283.
+Memory consumption went from 148.5 MB to 148.4 MB.
+Total: 7.511000 ms (FindLiveObjects: 0.544900 ms CreateObjectMapping: 0.794900 ms MarkObjects: 6.085600 ms  DeleteObjects: 0.084300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
