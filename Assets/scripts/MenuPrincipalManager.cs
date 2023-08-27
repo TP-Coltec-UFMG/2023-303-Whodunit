@@ -11,18 +11,15 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
     [SerializeField] private TMP_Dropdown filtros;
-       [SerializeField] private TMP_Dropdown niveis;
+    [SerializeField] private TMP_Dropdown niveis;
     [SerializeField] private Toggle legenda;
 
     public void Awake(){
         PlayerPrefs.SetInt("legendas", 0);
-        PlayerPrefs.SetString("filtroDaltonismo", null);
+        PlayerPrefs.SetString("filtroDeDaltonismo", null);
+        Debug.Log("legenda"+PlayerPrefs.GetInt("legendas"));
     }
     public void Update(){
-        if(Time.realtimeSinceStartup<4f){
-        Debug.Log("a");
-        PlayerPrefs.SetInt("jaEntrouNoMenu", 0);
-        }
     }
     public void Jogar(){
         SceneManager.LoadScene(nomeLevelDoJogo); 
@@ -37,6 +34,19 @@ public class MenuPrincipalManager : MonoBehaviour
         painelMenuInicial.SetActive(true);
         painelOpcoes.SetActive(false);
     }
+    public void guardaFiltro(){
+        PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
+        Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
+    }
+
+    public void guardaLegenda(){
+        if(PlayerPrefs.GetInt("legendas")==0){
+            PlayerPrefs.SetInt("legendas", 1);
+        }else if(PlayerPrefs.GetInt("legendas")==1){
+            PlayerPrefs.SetInt("legendas", 0);
+        }
+        Debug.Log("legenda"+PlayerPrefs.GetInt("legendas"));
+    }
 
     /*public void SairDoJogo(){
         Debug.Log("Sair do jogo");
@@ -50,21 +60,18 @@ public class MenuPrincipalManager : MonoBehaviour
             Application.Quit();
         #endif
     }
-
-    public void guardaFiltro(){
-        PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
-        Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
-    }
-
-    public void guardaLegenda(){
-        PlayerPrefs.SetInt("legendas", 1);
-        Debug.Log(PlayerPrefs.GetInt("legendas"));
-    }
     
     public void guardaNivel(){
-        PlayerPrefs.SetString("nivel", niveis.options[niveis.value].text);
-        Debug.Log(PlayerPrefs.GetString("nivel"));
-        Debug.Log(PlayerPrefs.GetString("nivel"));
+        PlayerPrefs.SetString("nivelDoJogo", niveis.options[niveis.value].text);
+        Debug.Log(PlayerPrefs.GetString("nivelDoJogo"));
+    }
+
+    public void fechaOpcoesJogo(){
+        painelOpcoes.SetActive(false);
+    }
+
+    public void abreOpcoesJogo(){
+        painelOpcoes.SetActive(true);
     }
 
    
