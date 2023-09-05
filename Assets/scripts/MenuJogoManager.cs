@@ -14,10 +14,14 @@ public class MenuJogoManager : MonoBehaviour
 
     void Awake(){
         if(PlayerPrefs.GetInt("legendas")==0){
-            legenda.isOn = true;
+            legenda.isOn = false;
+        }else{
+            legenda.isOn=true;
         }
+        legenda.onValueChanged.AddListener(guardaLegenda);
     }
-    public void guardaLegenda(){
+    public void guardaLegenda(bool isOn){
+        Debug.Log("oioi");
         if(PlayerPrefs.GetInt("legendas")==0){
             PlayerPrefs.SetInt("legendas", 1);
         }else if(PlayerPrefs.GetInt("legendas")==1){

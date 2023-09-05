@@ -25,10 +25,6 @@ public class SwitchToggle : MonoBehaviour {
         toggle.onValueChanged.AddListener(OnSwitch); 
         if(toggle.isOn)
             OnSwitch(true);
-        if(PlayerPrefs.GetInt("legendas")==1){
-            OnSwitch(true);
-            toggle.isOn = false;
-        }
         Debug.Log(toggle);
     }
     void OnSwitch(bool on){

@@ -41259,7 +41259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 222469440133d2fcb9f73d99c869c72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  legenda: {fileID: 1363280641}
+  legenda: {fileID: 2101111320}
   filtros: {fileID: 1107588600}
   painelOpcoes: {fileID: 1038280826}
 --- !u!1 &613933267
@@ -79728,18 +79728,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 609892225}
-        m_TargetAssemblyTypeName: MenuJogoManager, Assembly-CSharp
-        m_MethodName: guardaLegenda
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuJogoManager, Assembly-CSharp
         m_MethodName: 
