@@ -17,8 +17,8 @@ void Start(){
     alteraFiltro();
 }
 public void alteraFiltro(){
-    Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
-    this.filtro = PlayerPrefs.GetString("filtroDaltonismo");
+    this.filtro = PlayerPrefs.GetString("filtroDeDaltonismo");
+    Debug.Log("filtro"+this.filtro);
     cam = Camera.main.GetComponent<CameraController>();
     switch (filtro)
     {
@@ -37,10 +37,11 @@ public void alteraFiltro(){
     }
 }
 public void alteraFiltroJogo(){
-    PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
-    Debug.Log("teste2"+filtros.options[filtros.value].text);
+    PlayerPrefs.SetString("filtroDeDaltonismo", filtros.options[filtros.value].text);
+    Debug.Log(filtros.options[filtros.value].text);
     alteraFiltro();
 }
 }
 
+// Update is called once per frame
 // Update is called once per frame

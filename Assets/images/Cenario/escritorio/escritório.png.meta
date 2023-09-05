@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -18590,8 +18590,8 @@ TextureImporter:
       "escrit\xF3rio_742": -1302276903
       "escrit\xF3rio_279": -216791094
       "escrit\xF3rio_503": 1738734950
-      "escrit\xF3rio_801": -1904372786
       "escrit\xF3rio_543": -1505326152
+      "escrit\xF3rio_801": -1904372786
       "escrit\xF3rio_478": 1794717729
       "escrit\xF3rio_479": 335656039
       "escrit\xF3rio_482": 1713189903
@@ -18647,8 +18647,8 @@ TextureImporter:
       "escrit\xF3rio_714": 1393062998
       "escrit\xF3rio_445": 1227822512
       "escrit\xF3rio_736": 809723953
-      "escrit\xF3rio_739": -2053080701
       "escrit\xF3rio_694": -1481819049
+      "escrit\xF3rio_739": -2053080701
       "escrit\xF3rio_783": -1488953656
       "escrit\xF3rio_204": -143886612
       "escrit\xF3rio_217": -526424796
@@ -18670,16 +18670,16 @@ TextureImporter:
       "escrit\xF3rio_847": 215474885
       "escrit\xF3rio_325": 920597534
       "escrit\xF3rio_92": -1282435504
-      "escrit\xF3rio_519": 2144846889
       "escrit\xF3rio_580": -131783038
+      "escrit\xF3rio_519": 2144846889
       "escrit\xF3rio_438": -56947613
+      "escrit\xF3rio_486": -1665610837
       "escrit\xF3rio_685": 86316574
       "escrit\xF3rio_369": 1759518255
       "escrit\xF3rio_80": -242826731
-      "escrit\xF3rio_486": -1665610837
       "escrit\xF3rio_151": 2037939599
-      "escrit\xF3rio_301": 800610093
       "escrit\xF3rio_756": 229309506
+      "escrit\xF3rio_301": 800610093
       "escrit\xF3rio_155": 280226994
       "escrit\xF3rio_435": -1897549571
       "escrit\xF3rio_333": 437343656
@@ -18950,26 +18950,26 @@ TextureImporter:
       "escrit\xF3rio_547": -982681847
       "escrit\xF3rio_858": 1174711765
       "escrit\xF3rio_522": 992961122
+      "escrit\xF3rio_523": 855872385
       "escrit\xF3rio_193": -1834482537
       "escrit\xF3rio_838": -881816747
-      "escrit\xF3rio_851": -1814898288
+      "escrit\xF3rio_343": -1902195952
       "escrit\xF3rio_697": 1557776156
       "escrit\xF3rio_484": 1828350815
       "escrit\xF3rio_814": -1942547725
       "escrit\xF3rio_131": 1078610895
       "escrit\xF3rio_289": 593156288
       "escrit\xF3rio_751": -592149387
+      "escrit\xF3rio_851": -1814898288
       "escrit\xF3rio_423": 1872474589
       "escrit\xF3rio_617": -208316584
       "escrit\xF3rio_604": -1541579325
       "escrit\xF3rio_406": -1300815320
       "escrit\xF3rio_532": -1955559883
-      "escrit\xF3rio_343": -1902195952
       "escrit\xF3rio_862": 418307772
       "escrit\xF3rio_807": 1343499608
       "escrit\xF3rio_432": 1897353053
       "escrit\xF3rio_257": 539568454
-      "escrit\xF3rio_523": 855872385
       "escrit\xF3rio_76": 1321530077
       "escrit\xF3rio_578": -1748431845
       "escrit\xF3rio_112": 34651410
@@ -19034,13 +19034,13 @@ TextureImporter:
       "escrit\xF3rio_79": 60611706
       "escrit\xF3rio_463": -634311891
       "escrit\xF3rio_17": 1107575752
-      "escrit\xF3rio_500": -1335530178
-      "escrit\xF3rio_859": 2100086822
       "escrit\xF3rio_224": -156591065
+      "escrit\xF3rio_500": -1335530178
       "escrit\xF3rio_130": 1373117831
       "escrit\xF3rio_152": -1685232356
-      "escrit\xF3rio_372": -1528500197
       "escrit\xF3rio_720": -1569129328
+      "escrit\xF3rio_372": -1528500197
+      "escrit\xF3rio_859": 2100086822
       "escrit\xF3rio_447": -288837269
       "escrit\xF3rio_253": 1404394572
       "escrit\xF3rio_274": 1977954688
@@ -19102,20 +19102,20 @@ TextureImporter:
       "escrit\xF3rio_6": -47207365
       "escrit\xF3rio_286": 745460419
       "escrit\xF3rio_11": 453123478
-      "escrit\xF3rio_344": -331084643
-      "escrit\xF3rio_243": -691121452
-      "escrit\xF3rio_663": 484375460
       "escrit\xF3rio_102": -2133504499
+      "escrit\xF3rio_243": -691121452
+      "escrit\xF3rio_344": -331084643
+      "escrit\xF3rio_661": 766282515
       "escrit\xF3rio_440": 1837838749
       "escrit\xF3rio_28": 589098626
       "escrit\xF3rio_452": 1806040960
+      "escrit\xF3rio_663": 484375460
       "escrit\xF3rio_135": -2013652204
       "escrit\xF3rio_700": 1697959441
+      "escrit\xF3rio_798": 1767929375
       "escrit\xF3rio_842": 557514334
       "escrit\xF3rio_875": -481725176
-      "escrit\xF3rio_661": 766282515
       "escrit\xF3rio_316": -932116860
-      "escrit\xF3rio_798": 1767929375
       "escrit\xF3rio_294": 47612851
       "escrit\xF3rio_743": -1213569799
       "escrit\xF3rio_424": 1289489791
@@ -19133,8 +19133,8 @@ TextureImporter:
       "escrit\xF3rio_826": -2046887569
       "escrit\xF3rio_0": -903942371
       "escrit\xF3rio_201": 1143799892
-      "escrit\xF3rio_861": -49069448
       "escrit\xF3rio_827": 1230097492
+      "escrit\xF3rio_861": -49069448
       "escrit\xF3rio_644": -1539391139
       "escrit\xF3rio_200": 412439959
       "escrit\xF3rio_868": -547298510
@@ -19177,18 +19177,18 @@ TextureImporter:
       "escrit\xF3rio_754": 1929552053
       "escrit\xF3rio_558": -815329430
       "escrit\xF3rio_84": -871465059
-      "escrit\xF3rio_840": 1563051536
+      "escrit\xF3rio_541": 962490054
       "escrit\xF3rio_98": -2013832201
       "escrit\xF3rio_418": 709674758
+      "escrit\xF3rio_840": 1563051536
       "escrit\xF3rio_212": -1559079443
-      "escrit\xF3rio_541": 962490054
-      "escrit\xF3rio_143": -166207
-      "escrit\xF3rio_539": 959413089
-      "escrit\xF3rio_147": -643496419
-      "escrit\xF3rio_758": -1871573566
       "escrit\xF3rio_722": -548695020
-      "escrit\xF3rio_572": -353404525
+      "escrit\xF3rio_143": -166207
+      "escrit\xF3rio_147": -643496419
       "escrit\xF3rio_395": 956478553
+      "escrit\xF3rio_539": 959413089
+      "escrit\xF3rio_572": -353404525
+      "escrit\xF3rio_758": -1871573566
       "escrit\xF3rio_518": 215430383
       "escrit\xF3rio_716": 175526453
       "escrit\xF3rio_100": -1029160565

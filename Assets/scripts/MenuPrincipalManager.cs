@@ -35,8 +35,8 @@ public class MenuPrincipalManager : MonoBehaviour
         painelOpcoes.SetActive(false);
     }
     public void guardaFiltro(){
-        PlayerPrefs.SetString("filtroDaltonismo", filtros.options[filtros.value].text);
-        Debug.Log(PlayerPrefs.GetString("filtroDaltonismo"));
+        PlayerPrefs.SetString("filtroDeDaltonismo", filtros.options[filtros.value].text);
+        Debug.Log(PlayerPrefs.GetString("filtroDeDaltonismo"));
     }
 
     public void guardaLegenda(){

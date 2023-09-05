@@ -4231,7 +4231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "F\xE1cil"
+  m_text: Padrao
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c80cb688d0e7df75584624a7641e7af2, type: 2}
   m_sharedMaterial: {fileID: -7743639883234866482, guid: c80cb688d0e7df75584624a7641e7af2, type: 2}
@@ -5157,6 +5157,8 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
+    - m_Text: Padrao
+      m_Image: {fileID: 0}
     - m_Text: "F\xE1cil"
       m_Image: {fileID: 0}
     - m_Text: "M\xE9dio"

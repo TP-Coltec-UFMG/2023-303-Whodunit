@@ -16,6 +16,7 @@ public class Dialogue : MonoBehaviour
 
     private void Start(){
         this.dc=FindObjectOfType<DialogueControl>();
+        this.legendas = PlayerPrefs.GetInt("legendas");
         this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
     }
 
@@ -24,17 +25,17 @@ public class Dialogue : MonoBehaviour
     }
 
     private void Update(){
-
+        this.legendas = PlayerPrefs.GetInt("legendas");
         if(Input.GetKeyDown(KeyCode.Space)&&onRadious){
             if(!falaPersonagem.isPlaying){
                 falaPersonagem.Play();
             }
-            if(PlayerPrefs.GetInt("legendas") == 1){
-                dc.Speech(this.speechTxt, this.actorName);
+            if(legendas == 1){
+            dc.Speech(this.speechTxt, this.actorName);
             }
              
         }
-        this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
+         this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
     }
     
     public void Interact(){
