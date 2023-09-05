@@ -19,13 +19,12 @@ public class FinalizaJogo : MonoBehaviour
     void Start()
     {
         this.nivel=PlayerPrefs.GetString("nivelDoJogo");
-        if(PlayerPrefs.GetInt("jaEntrouNoMenu")==0){
         tempoDeInicio=Time.realtimeSinceStartup;
         PlayerPrefs.SetFloat("tempoDeMenu", tempoDeInicio);
-        }
         PlayerPrefs.SetInt("jaEntrouNoMenu",1);
-        Debug.Log("tempo menu"+tempoDeInicio);
+        Debug.Log("tempo menu"+ PlayerPrefs.GetFloat("tempoDeMenu"));
         botoes = opcoes.GetComponentsInChildren<Button>();
+
         foreach(Button item in botoes)
         {
             item.onClick.AddListener(AnalisaResposta);
