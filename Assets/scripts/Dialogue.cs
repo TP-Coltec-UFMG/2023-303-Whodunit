@@ -29,9 +29,9 @@ public class Dialogue : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)&&onRadious){
             if(!falaPersonagem.isPlaying){
                 falaPersonagem.Play();
-            }
             if(legendas == 1){
             dc.Speech(this.speechTxt, this.actorName);
+            }
             }
              
         }

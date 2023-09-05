@@ -45,7 +45,7 @@ public class MenuPrincipalManager : MonoBehaviour
         }else if(PlayerPrefs.GetInt("legendas")==1){
             PlayerPrefs.SetInt("legendas", 0);
         }
-        Debug.Log("legenda"+PlayerPrefs.GetInt("legendas"));
+        Debug.Log("bblegenda"+PlayerPrefs.GetInt("legendas"));
     }
 
     /*public void SairDoJogo(){

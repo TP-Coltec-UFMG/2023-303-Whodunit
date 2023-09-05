@@ -11,13 +11,19 @@ public class MenuJogoManager : MonoBehaviour
       [SerializeField] private TMP_Dropdown filtros;
       [SerializeField] private GameObject painelOpcoes;
 
+
+    void Awake(){
+        if(PlayerPrefs.GetInt("legendas")==0){
+            legenda.isOn = true;
+        }
+    }
     public void guardaLegenda(){
         if(PlayerPrefs.GetInt("legendas")==0){
             PlayerPrefs.SetInt("legendas", 1);
         }else if(PlayerPrefs.GetInt("legendas")==1){
             PlayerPrefs.SetInt("legendas", 0);
         }
-        Debug.Log("legenda"+PlayerPrefs.GetInt("legendas"));
+        Debug.Log("aalegenda"+PlayerPrefs.GetInt("legendas"));
     }
      public void fechaOpcoesJogo(){
         painelOpcoes.SetActive(false);
