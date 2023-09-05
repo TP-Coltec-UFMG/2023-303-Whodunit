@@ -18,14 +18,13 @@ public class TempoControl : MonoBehaviour
 
     void Start() {
         tempoDeInicio = PlayerPrefs.GetFloat("tempoDeMenu");
-        nivel = PlayerPrefs.GetString("nivel");
+        nivel = PlayerPrefs.GetString("nivelDoJogo");
         tempoDeJogo = PlayerPrefs.GetFloat("tempoDeJogo");
-        Debug.Log("nivel" + nivel);   
         s = ((int)tempoDeJogo%60);
         m = ((int)tempoDeJogo/60);
         segundos.text= s.ToString("F0");
         minutos.text= m.ToString("F0");
-
+        Debug.Log(tempoDeJogo);
     }
 
      public void abreMenu(){

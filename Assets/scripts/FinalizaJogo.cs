@@ -18,7 +18,7 @@ public class FinalizaJogo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.nivel=PlayerPrefs.GetString("nivel");
+        this.nivel=PlayerPrefs.GetString("nivelDoJogo");
         if(PlayerPrefs.GetInt("jaEntrouNoMenu")==0){
         tempoDeInicio=Time.realtimeSinceStartup;
         PlayerPrefs.SetFloat("tempoDeMenu", tempoDeInicio);
@@ -44,7 +44,7 @@ public class FinalizaJogo : MonoBehaviour
                 this.tempoDeJogo=302;
                 break;
             default:
-                this.tempoDeJogo=5;
+                this.tempoDeJogo=8;
                 break;
         }
         PlayerPrefs.SetFloat("tempoDeJogo", this.tempoDeJogo);

@@ -17,7 +17,7 @@ public class MenuPrincipalManager : MonoBehaviour
     public void Awake(){
         PlayerPrefs.SetInt("legendas", 0);
         PlayerPrefs.SetString("filtroDeDaltonismo", null);
-        Debug.Log("legenda"+PlayerPrefs.GetInt("legendas"));
+        PlayerPrefs.SetString("nivelDoJogo", null);
     }
     public void Update(){
     }
