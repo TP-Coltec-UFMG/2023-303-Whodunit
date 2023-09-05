@@ -35,16 +35,16 @@ public class FinalizaJogo : MonoBehaviour
         switch (nivel)
         {
             case "Fácil":
-                this.tempoDeJogo=152;
+                this.tempoDeJogo=600;
                 break;
             case "Médio":
-                this.tempoDeJogo=202;
+                this.tempoDeJogo=420;
                 break;
             case "Difícil":
-                this.tempoDeJogo=302;
+                this.tempoDeJogo=300;
                 break;
             default:
-                this.tempoDeJogo=8;
+                this.tempoDeJogo=600;
                 break;
         }
         PlayerPrefs.SetFloat("tempoDeJogo", this.tempoDeJogo);
