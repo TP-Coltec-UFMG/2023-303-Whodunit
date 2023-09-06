@@ -51,7 +51,7 @@ public class FinalizaJogo : MonoBehaviour
     public void AnalisaResposta(){
         GameObject objetoQueChamou = EventSystem.current.currentSelectedGameObject;
         opcoes.SetActive(false);
-        if(objetoQueChamou.GetComponentInChildren<TMP_Text>().text=="teste1"){
+        if(objetoQueChamou.GetComponentInChildren<TMP_Text>().text=="empresario"){
             interfaceAcertou.SetActive(true);
         }else{
             interfaceErrou.SetActive(true);
