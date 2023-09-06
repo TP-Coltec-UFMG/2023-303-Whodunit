@@ -69,7 +69,11 @@ public class FinalizaJogo : MonoBehaviour
     }
 
     public void AtivaInterface(){
-        respostaJogo.SetActive(true);
+        if(respostaJogo.activeSelf){
+        respostaJogo.SetActive(false);
+        }else{
+            respostaJogo.SetActive(true);
+        }
     }
 
 }
