@@ -17,10 +17,14 @@ public class DialogueControl : MonoBehaviour
     private int index;
 
     public void Speech(string[] txt, string actorName){
+        if(PlayerPrefs.GetInt("estaTocando")==0){
+        PlayerPrefs.SetInt("estaTocando", 1);
         dialogueObj.SetActive(true);
         sentences=txt;
         actorNameText.text=actorName;
         StartCoroutine(TypeSentence());
+        }
+         Debug.Log(PlayerPrefs.GetInt("estaTocando"));
     }
 
     IEnumerator TypeSentence(){
@@ -37,6 +41,8 @@ public class DialogueControl : MonoBehaviour
                 speechText.text="";
                 StartCoroutine(TypeSentence());
             }else{
+                PlayerPrefs.SetInt("estaTocando", 0);
+                Debug.Log(PlayerPrefs.GetInt("estaTocando"));
                 speechText.text="";
                 index=0;
                 dialogueObj.SetActive(false);
