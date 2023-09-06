@@ -11,6 +11,7 @@ public class MenuJogoManager : MonoBehaviour
       [SerializeField] private Toggle legenda;
       [SerializeField] private TMP_Dropdown filtros;
       [SerializeField] private GameObject painelOpcoes;
+       [SerializeField] private GameObject Orientacoes;
 
 
     void Awake(){
@@ -37,6 +38,10 @@ public class MenuJogoManager : MonoBehaviour
     }
      public void VoltarMenu(){
         SceneManager.LoadScene("Menu"); 
+    }
+
+    public void fechaOrientacoes(){
+        Orientacoes.SetActive(false);
     }
     public void TerminarJogo(){
          #if UNITY_EDITOR
