@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuJogoManager : MonoBehaviour
 {
@@ -21,13 +22,11 @@ public class MenuJogoManager : MonoBehaviour
         legenda.onValueChanged.AddListener(guardaLegenda);
     }
     public void guardaLegenda(bool isOn){
-        Debug.Log("oioi");
         if(PlayerPrefs.GetInt("legendas")==0){
             PlayerPrefs.SetInt("legendas", 1);
         }else if(PlayerPrefs.GetInt("legendas")==1){
             PlayerPrefs.SetInt("legendas", 0);
         }
-        Debug.Log("aalegenda"+PlayerPrefs.GetInt("legendas"));
     }
      public void fechaOpcoesJogo(){
         painelOpcoes.SetActive(false);
@@ -35,6 +34,16 @@ public class MenuJogoManager : MonoBehaviour
 
     public void abreOpcoesJogo(){
         painelOpcoes.SetActive(true);
+    }
+     public void VoltarMenu(){
+        SceneManager.LoadScene("Menu"); 
+    }
+    public void TerminarJogo(){
+         #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
 }

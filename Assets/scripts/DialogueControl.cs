@@ -34,11 +34,9 @@ public class DialogueControl : MonoBehaviour
         if(speechText.text == sentences[index]){
             if(index<sentences.Length - 1){
                 index++;
-                Debug.Log(index);
                 speechText.text="";
                 StartCoroutine(TypeSentence());
             }else{
-                Debug.Log("entrei aqui");
                 speechText.text="";
                 index=0;
                 dialogueObj.SetActive(false);

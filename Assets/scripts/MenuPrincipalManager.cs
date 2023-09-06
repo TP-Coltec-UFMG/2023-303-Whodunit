@@ -18,6 +18,7 @@ public class MenuPrincipalManager : MonoBehaviour
         PlayerPrefs.SetInt("legendas", 0);
         PlayerPrefs.SetString("filtroDeDaltonismo", null);
         PlayerPrefs.SetString("nivelDoJogo", null);
+       
     }
     public void Update(){
     }
@@ -36,7 +37,6 @@ public class MenuPrincipalManager : MonoBehaviour
     }
     public void guardaFiltro(){
         PlayerPrefs.SetString("filtroDeDaltonismo", filtros.options[filtros.value].text);
-        Debug.Log(PlayerPrefs.GetString("filtroDeDaltonismo"));
     }
 
     public void guardaLegenda(){
@@ -45,13 +45,8 @@ public class MenuPrincipalManager : MonoBehaviour
         }else if(PlayerPrefs.GetInt("legendas")==1){
             PlayerPrefs.SetInt("legendas", 0);
         }
-        Debug.Log("bblegenda"+PlayerPrefs.GetInt("legendas"));
     }
 
-    /*public void SairDoJogo(){
-        Debug.Log("Sair do jogo");
-        Application.Quit();
-    }*/
 
     public void SairDoJogo(){
         #if UNITY_EDITOR
@@ -63,7 +58,6 @@ public class MenuPrincipalManager : MonoBehaviour
     
     public void guardaNivel(){
         PlayerPrefs.SetString("nivelDoJogo", niveis.options[niveis.value].text);
-        Debug.Log(PlayerPrefs.GetString("nivelDoJogo"));
     }
 
     public void fechaOpcoesJogo(){

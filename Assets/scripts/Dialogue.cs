@@ -26,16 +26,24 @@ public class Dialogue : MonoBehaviour
 
     private void Update(){
         this.legendas = PlayerPrefs.GetInt("legendas");
+
+
         if(Input.GetKeyDown(KeyCode.Space)&&onRadious){
             if(!falaPersonagem.isPlaying){
                 falaPersonagem.Play();
-            if(legendas == 1){
-            dc.Speech(this.speechTxt, this.actorName);
+                if(legendas == 1){
+                    dc.Speech(this.speechTxt, this.actorName);
+                }
             }
-            }
-             
         }
-         this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
+        /*
+        if(falaPersonagem.isPlaying){
+
+        }else{
+        }*/
+
+        
+        this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
     }
     
     public void Interact(){
@@ -45,6 +53,9 @@ public class Dialogue : MonoBehaviour
         }else{
             onRadious=false;
         }
+
+        
+        
     }
     private void OnDrawGizmosSelected(){
         Gizmos.DrawWireSphere(transform.position, this.radious);

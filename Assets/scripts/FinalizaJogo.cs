@@ -22,14 +22,12 @@ public class FinalizaJogo : MonoBehaviour
         tempoDeInicio=Time.realtimeSinceStartup;
         PlayerPrefs.SetFloat("tempoDeMenu", tempoDeInicio);
         PlayerPrefs.SetInt("jaEntrouNoMenu",1);
-        Debug.Log("tempo menu"+ PlayerPrefs.GetFloat("tempoDeMenu"));
         botoes = opcoes.GetComponentsInChildren<Button>();
 
         foreach(Button item in botoes)
         {
             item.onClick.AddListener(AnalisaResposta);
         }
-        Debug.Log("nivel"+nivel);
 
         switch (nivel)
         {
@@ -64,7 +62,6 @@ public class FinalizaJogo : MonoBehaviour
     void Update()
     {
         if((Time.realtimeSinceStartup-tempoDeInicio)>this.tempoDeJogo){
-        Debug.Log(tempoDeInicio);
             if(!respostaJogo.activeInHierarchy){
                AtivaInterface();
             } 

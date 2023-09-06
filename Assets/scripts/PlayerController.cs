@@ -12,14 +12,18 @@ public class PlayerController : MonoBehaviour
 
     private void Start(){
         this.fisica=GetComponent<Rigidbody2D>();
+        PlayerPrefs.SetInt("podeMover", 1);
     }
     private void Update(){
-        this.direcao.x = Input.GetAxisRaw("Horizontal");
-        this.direcao.y = Input.GetAxisRaw("Vertical");
-        
-        animacao.SetFloat("Horizontal", direcao.x);
-        animacao.SetFloat("Vertical", direcao.y);
-        animacao.SetFloat("Velocidade", direcao.magnitude);
+        if(PlayerPrefs.GetInt("podeMover")==1){
+            this.direcao.x = Input.GetAxisRaw("Horizontal");
+            this.direcao.y = Input.GetAxisRaw("Vertical");
+            
+            animacao.SetFloat("Horizontal", direcao.x);
+            animacao.SetFloat("Vertical", direcao.y);
+            animacao.SetFloat("Velocidade", direcao.magnitude);
+
+        }
     }
     private void FixedUpdate()
     {

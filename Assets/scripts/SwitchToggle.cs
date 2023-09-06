@@ -25,7 +25,6 @@ public class SwitchToggle : MonoBehaviour {
         toggle.onValueChanged.AddListener(OnSwitch); 
         if(toggle.isOn)
             OnSwitch(true);
-        Debug.Log(toggle);
     }
     void OnSwitch(bool on){
         uiHandleRectTransform.anchoredPosition=on?handlePosition* -1 : handlePosition;
