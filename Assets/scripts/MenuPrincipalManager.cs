@@ -18,6 +18,7 @@ public class MenuPrincipalManager : MonoBehaviour
         PlayerPrefs.SetInt("legendas", 0);
         PlayerPrefs.SetString("filtroDeDaltonismo", null);
         PlayerPrefs.SetString("nivelDoJogo", null);
+        PlayerPrefs.SetInt("estaTocando", 0);
        
     }
     public void Update(){
