@@ -24,7 +24,7 @@ public class DialogueControl : MonoBehaviour
         actorNameText.text=actorName;
         StartCoroutine(TypeSentence());
         }
-         Debug.Log(PlayerPrefs.GetInt("estaTocando"));
+
     }
 
     IEnumerator TypeSentence(){
