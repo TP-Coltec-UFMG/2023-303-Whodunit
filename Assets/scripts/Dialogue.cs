@@ -25,15 +25,20 @@ public class Dialogue : MonoBehaviour
     }
 
     private void Update(){
-        if(Input.GetKeyDown(KeyCode.Space)&&onRadious){
+        this.legendas = PlayerPrefs.GetInt("legendas");
+
+        if(Input.GetMouseButtonDown(1)&&onRadious){
             if(!falaPersonagem.isPlaying){
+                if(PlayerPrefs.GetInt("estaTocando")==0){
+
                 falaPersonagem.Play();
+                }
+                if(legendas == 1){
+                    dc.Speech(this.speechTxt, this.actorName);
+                }
             }
-            if(legendas == 1){
-            dc.Speech(this.speechTxt, this.actorName);
-            }
-             
         }
+        
         this.falaPersonagem.volume=PlayerPrefs.GetFloat("volumeAudio");
     }
     

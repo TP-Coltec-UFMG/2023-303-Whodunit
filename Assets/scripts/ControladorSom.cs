@@ -37,7 +37,6 @@ public class ControladorSom : MonoBehaviour
         interfaceMudaValor.SetActive(false);
     }
     public void alteraVolumeMusical(float value){
-        Debug.Log("Mudou"+PlayerPrefs.GetFloat("volumeAudio"));
         PlayerPrefs.SetFloat("volumeAudio", value);
     }
 }

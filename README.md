@@ -37,6 +37,8 @@ O menu também apresenta opções de configuração e acessibilidade que podem s
 
 <img src="/readme/ajustes.gif">
 
+O menu também pode ser acessado dentro do jogo para alterar as configurações quando quiser.
+
 ## Jogo
 
 ### Mapa
@@ -51,20 +53,24 @@ O menu também apresenta opções de configuração e acessibilidade que podem s
 
 ### Personagens
 - Detetive (Jogador): Explore, Analise, e prenda o culpado.
-<img src="/readme/Frente3.png" style="width:25%">
-<img src="/readme/Direita.png" style="width:25%">
-<img src="/readme/Costas.png" style="width:25%">
-<img src="/readme/Esquerda.png" style="width:25%">
+<img src="/readme/Frente3.png" style="width:15%">
+<img src="/readme/Direita.png" style="width:15%">
+<img src="/readme/Costas.png" style="width:15%">
+<img src="/readme/Esquerda.png" style="width:15%">
 
 - NPCs: Busque e interaja com NPCs para obter informações sobre o mistério.
-<img src="/readme/Empresario.png" style="width:25%">
-<img src="/readme/Empregada.png" style="width:25%">
-<img src="/readme/BarMan.png" style="width:25%">
+<img src="/readme/BarMan.png" style="width:25%" alt="Barman">
+<img src="/readme/Empresario.png" style="width:25%" alt="Empresário">
+<img src="/readme/Empregada.png" style="width:15%" alt="Empregada">
+<img src="/readme/inspetor.png" style="width:15%" alt="Inspetor">
+<img src="/readme/reporter.png" style="width:10%" alt="Reporter">
+<img src="/readme/Mulher(VanessaOats).png" style="width:15%" alt="Vanessa Oats">
+
 
 
 ### Mecânicas
-- Tempo: O jogador tem um tempo limite para resolver o mistério, ou é gameover.
+- Tempo: O jogador tem um tempo limite para resolver o mistério, ou é gameover. O tempo é definido pela dificuldade do jogo, podendo escolher fácil, médio e difícil.
 
-- Interação: Ao pressionar a tecla "Espaço" perto de um personagem ou objeto, se pode obter informações sobre o caso
+- Interação: Ao clicar com o botão direito perto de um personagem ou objeto, pode-se obter informações sobre o caso. As interações são feitas por áudio e por legendas, quando ativadas nas configurações.
 
-- Resposta (não implementado): O jogador deve deduzir quem foi o culpado antes do tempo acabar clicando no nome do suspeito
+- Resposta: O jogador deve deduzir quem foi o culpado antes do tempo acabar, acessando a aba de responder e clicando no em um dos 6 suspeitos.

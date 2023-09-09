@@ -14,45 +14,44 @@ public class FinalizaJogo : MonoBehaviour
        Button[] botoes;
        private float tempoDeInicio;
        public float tempoDeJogo;
+       private string nivel;
     // Start is called before the first frame update
     void Start()
     {
-        string nivel=PlayerPrefs.GetString("nivel");
-        if(PlayerPrefs.GetInt("jaEntrouNoMenu")==0){
+        this.nivel=PlayerPrefs.GetString("nivelDoJogo");
         tempoDeInicio=Time.realtimeSinceStartup;
-        }
+        PlayerPrefs.SetFloat("tempoDeMenu", tempoDeInicio);
         PlayerPrefs.SetInt("jaEntrouNoMenu",1);
-        Debug.Log("tempo menu"+tempoDeInicio);
         botoes = opcoes.GetComponentsInChildren<Button>();
+
         foreach(Button item in botoes)
         {
             item.onClick.AddListener(AnalisaResposta);
         }
-        Debug.Log(nivel);
 
         switch (nivel)
         {
             case "Fácil":
-                this.tempoDeJogo=10;
+                this.tempoDeJogo=600;
                 break;
             case "Médio":
-                this.tempoDeJogo=20;
+                this.tempoDeJogo=420;
                 break;
             case "Difícil":
-                this.tempoDeJogo=30;
+                this.tempoDeJogo=300;
                 break;
             default:
-                this.tempoDeJogo=10;
+                this.tempoDeJogo=600;
                 break;
         }
-        Debug.Log(this.tempoDeJogo);
-        Debug.Log(tempoDeInicio);
+        PlayerPrefs.SetFloat("tempoDeJogo", this.tempoDeJogo);
+    
     }
 
     public void AnalisaResposta(){
         GameObject objetoQueChamou = EventSystem.current.currentSelectedGameObject;
         opcoes.SetActive(false);
-        if(objetoQueChamou.GetComponentInChildren<TMP_Text>().text=="teste1"){
+        if(objetoQueChamou.GetComponentInChildren<TMP_Text>().text=="empresario"){
             interfaceAcertou.SetActive(true);
         }else{
             interfaceErrou.SetActive(true);
@@ -63,7 +62,6 @@ public class FinalizaJogo : MonoBehaviour
     void Update()
     {
         if((Time.realtimeSinceStartup-tempoDeInicio)>this.tempoDeJogo){
-        Debug.Log(tempoDeInicio);
             if(!respostaJogo.activeInHierarchy){
                AtivaInterface();
             } 
@@ -71,7 +69,11 @@ public class FinalizaJogo : MonoBehaviour
     }
 
     public void AtivaInterface(){
-        respostaJogo.SetActive(true);
+        if(respostaJogo.activeSelf){
+        respostaJogo.SetActive(false);
+        }else{
+            respostaJogo.SetActive(true);
+        }
     }
 
 }

@@ -16,14 +16,15 @@ public class DialogueControl : MonoBehaviour
     private string[] sentences;
     private int index;
 
-
     public void Speech(string[] txt, string actorName){
+        if(PlayerPrefs.GetInt("estaTocando")==0){
+        PlayerPrefs.SetInt("estaTocando", 1);
         dialogueObj.SetActive(true);
         sentences=txt;
         actorNameText.text=actorName;
-        Debug.Log("speech");
-        
         StartCoroutine(TypeSentence());
+        }
+
     }
 
     IEnumerator TypeSentence(){
@@ -34,28 +35,18 @@ public class DialogueControl : MonoBehaviour
     }
 
     public void NextSentence(){
-        if(dialogueObj.GetComponentInChildren<TMP_Text>().text!=sentences[index]){
-            speechText.text="";
-            StopAllCoroutines();
-            dialogueObj.GetComponentInChildren<TMP_Text>().text=sentences[index];
-            index++;
-        }else{
-            Debug.Log("entrei");
         if(speechText.text == sentences[index]){
-                StartCoroutine(TypeSentence());
             if(index<sentences.Length - 1){
                 index++;
-                Debug.Log(index);
                 speechText.text="";
-                Debug.Log("speech2");
+                StartCoroutine(TypeSentence());
             }else{
-                Debug.Log("entrei aqui");
+                PlayerPrefs.SetInt("estaTocando", 0);
+                Debug.Log(PlayerPrefs.GetInt("estaTocando"));
                 speechText.text="";
                 index=0;
                 dialogueObj.SetActive(false);
             }
-        }
-            
         }
     }
 
